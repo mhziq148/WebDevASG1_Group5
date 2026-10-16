@@ -29,7 +29,7 @@ A web application developed for **AnyFacture Studio**, specializing in premium f
 ---
 
 ##  Project Structure
-anyfacture/
+```anyfacture/
 │
 ├── Home.html          # Homepage & landing view
 ├── Products.html      # Product catalog page
