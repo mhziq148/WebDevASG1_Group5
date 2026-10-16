@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
 $username = "root";
-$password = "";
+$password = ""; // Leave blank if you haven't set a root password in XAMPP/Wamp
 $dbname = "anyfact_db";
 
 $conn = new mysqli($host, $username, $password, $dbname);
