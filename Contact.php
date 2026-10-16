@@ -2,7 +2,7 @@
 // anyfacture.db connection
 $host = 'localhost';
 $username = 'root';
-$password = '1';
+$password = ''; // 
 $dbname = 'anyfact_db';
 
 $success_message = "";
