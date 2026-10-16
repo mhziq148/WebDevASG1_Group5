@@ -1,5 +1,5 @@
 <?php
-// db.php connection & processing logic bundled at the top
+// anyfacture.db connection
 $host = 'localhost';
 $username = 'root';
 $password = '1';
@@ -13,7 +13,7 @@ try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
-    // This will display the exact database error on your screen so you can see what's wrong
+    // Display database error
     die("Database Connection Failed: " . $e->getMessage());
 }
 
