@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
 $username = "root";
-$password = "1";
+$password = "";
 $dbname = "anyfact_db";
 
 $conn = new mysqli($host, $username, $password, $dbname);
