@@ -2,7 +2,7 @@
 // anyfacture.db connection
 $host = 'localhost';
 $username = 'root';
-$password = ''; // 
+$password = ''; // Leave blank if you haven't set a root password in XAMPP/Wamp
 $dbname = 'anyfact_db';
 
 $success_message = "";
@@ -83,10 +83,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit_order'])) {
             <!-- Added .form-container class to toggle submission state styles -->
             <div class="contact-grid form-container <?php echo $is_submitted ? 'submitted' : ''; ?>">
             
-                <!-- Form mapped with your CSS classes -->
+                <!-- Form mapped with CSS classes -->
                 <form action="process_order.php" method="POST">
                 
-                    <!-- Success Banner (CSS handles display via .form-container.submitted) -->
+                    <!-- Success Banner -->
                     <div class="success-banner">
                         <?php echo htmlspecialchars($success_message); ?>
                     </div>
