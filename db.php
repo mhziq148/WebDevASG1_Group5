@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
 $username = "root";
-$password = "1"; // Leave blank if you haven't set a root password in XAMPP/Wamp
+$password = ""; // Leave blank if you haven't set a root password in XAMPP/Wamp
 $database = "anyfact_db";
 
 // Create connection
