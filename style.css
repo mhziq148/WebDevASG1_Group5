@@ -1,0 +1,472 @@
+/* --- GLOBAL STYLES & RESET --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    color: #2b3a32;
+    background-color: #f7f9f6;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+/* --- TYPOGRAPHY & BUTTONS --- */
+h1, h2, h3 {
+    color: #1a2e22;
+    font-weight: 700;
+}
+
+p {
+    color: #4a5d52;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #e2f0d9;
+    color: #2e6038;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #235d3a;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #1a472c;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #235d3a;
+    border: 1.5px solid #235d3a;
+}
+
+.btn-secondary:hover {
+    background-color: #e2f0d9;
+}
+
+.btn-sm {
+    padding: 0.4rem 1rem;
+    font-size: 0.875rem;
+    background-color: #235d3a;
+    color: #ffffff;
+}
+
+.btn-full {
+    width: 100%;
+}
+
+.section-header {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* --- NAVIGATION --- */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: rgba(247, 249, 246, 0.95);
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid #e1e8e2;
+    z-index: 1000;
+    padding: 1rem 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1a2e22;
+    text-decoration: none;
+}
+
+.nav-links a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #4a5d52;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #235d3a;
+}
+
+/* --- 1. HOME SECTION --- */
+.hero-section {
+    padding: 4rem 0 6rem 0;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+}
+
+.hero-text {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+}
+
+.cta-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.hero-image-card {
+    position: relative;
+    background-color: #cce8d5;
+    border-radius: 16px;
+    padding: 1.5rem;
+}
+
+.hero-image-card img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.featured-tag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    background: #ffffff;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+}
+
+.tag-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #718378;
+}
+
+.product-title {
+    font-weight: 600;
+}
+
+.product-price {
+    font-weight: 700;
+    color: #235d3a;
+}
+
+/* --- 2. PRODUCTS SECTION --- */
+.products-section {
+    background-color: #ffffff;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.product-card {
+    border: 1px solid #e1e8e2;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.category {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #718378;
+    letter-spacing: 0.05em;
+}
+
+.product-info h3 {
+    margin: 0.25rem 0 0.5rem 0;
+    font-size: 1.125rem;
+}
+
+.product-info p {
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #f0f4f1;
+    padding-top: 0.75rem;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+.shipping {
+    font-size: 0.65rem;
+    color: #83948a;
+}
+
+/* --- 3. OUR STORY SECTION --- */
+.story-section {
+    background-color: #f7f9f6;
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+    aspect-ratio: 16 / 9;
+    background-color: #000;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e1e8e2;
+    text-align: center;
+}
+
+.feature-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* --- 4. CONTACT SECTION --- */
+.contact-section {
+    background-color: #ffffff;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    color: #4a5d52;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 0.75rem;
+    border: 1px solid #c8d4cb;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.9rem;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.success-banner {
+    display: none; /* Hidden by default */
+    background-color: #d4edda;
+    color: #155724;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Shown when the form successfully submits */
+.form-container.submitted .success-banner {
+    display: block;
+}
+
+.info-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #f7f9f6;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.info-icon {
+    font-size: 1.5rem;
+}
+
+.info-card h4 {
+    font-size: 0.75rem;
+    color: #718378;
+}
+
+/* --- FOOTER --- */
+.footer {
+    background-color: #1a2e22;
+    color: #a3b8ab;
+    padding: 3rem 0 1.5rem 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.footer-brand .brand-logo {
+    color: #ffffff;
+}
+
+.footer-brand p {
+    color: #a3b8ab;
+    margin-top: 0.5rem;
+    max-width: 300px;
+    font-size: 0.875rem;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-size: 0.875rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #2e4737;
+    padding-top: 1.5rem;
+    font-size: 0.75rem;
+}
+
+/* --- RESPONSIVE MEDIA QUERIES --- */
+@media (max-width: 768px) {
+    .hero-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .footer-links a {
+        margin-left: 0;
+        margin-right: 1.5rem;
+    }
+}
+
+.nav-links a.active {
+    color: #235d3a;
+    font-weight: 700;
+    border-bottom: 2px solid #235d3a;
+    padding-bottom: 0.2rem;
+}
