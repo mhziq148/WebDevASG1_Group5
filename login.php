@@ -6,7 +6,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username_input = $_POST['username'];
     $password_input = $_POST['password'];
 
-    // Simple hardcoded admin check for assignment purposes (or query from your 'admins' table)
     if ($username_input === "admin" && $password_input === "password123") {
         $_SESSION['admin_logged_in'] = true;
         header("Location: dashboard.php");
