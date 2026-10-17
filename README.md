@@ -57,6 +57,8 @@ A web application developed for **AnyFacture Studio**, specializing in premium f
 1. Open phpMyAdmin and go to **Import** tab, then upload 'anyfact_db.sql' file include in this repository
 2. Click **Go** to set up the tables automatically.
 
+---
+
 ## Dashboard
 1. USERNAME = admin
 2. PASSWORD = password123
