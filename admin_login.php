@@ -8,8 +8,8 @@ $admin_password_hash = password_hash("password123", PASSWORD_DEFAULT);
 $error = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = trim($_POST['username']);
-    $password = trim($_POST['password']);
+    $username = $_POST['admin'] ?? '';
+    $password = $_POST['password123'] ?? '';
 
     if ($username === $admin_username && password_verify($password, $admin_password_hash)) {
         $_SESSION['admin_logged_in'] = true;
@@ -32,8 +32,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
 
 <!-- NAVIGATION -->
-<header class="navbar">
-    <div class="container nav-container">
+<header class="container">
+    <div class="row justify-content-center">
         <a href="Home.html" class="brand-logo">♻️ AnyFacture Studio</a>
         <nav class="nav-links">
             <a href="Home.html">Home</a>
@@ -59,12 +59,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <form action="#" method="POST">
                     <div class="form-group" style="margin-bottom: 20px;">
                         <label for="username" style="display: block; font-size: 13px; font-weight: 600; color: #1b2621; margin-bottom: 8px;">username</label>
-                        <input type="text" name="Username" placeholder="Username" required style="width: 100%; padding: 14px 16px; border: 1px solid #d1dcda; border-radius: 8px; font-size: 15px; background-color: #f8faf9; color: #1b2621;">
+                        <input type="text" name="admin" placeholder="Username" required style="width: 100%; padding: 14px 16px; border: 1px solid #d1dcda; border-radius: 8px; font-size: 15px; background-color: #f8faf9; color: #1b2621;">
                     </div>
 
                     <div class="form-group" style="margin-bottom: 20px;">
                         <label for="password" style="display: block; font-size: 13px; font-weight: 600; color: #1b2621; margin-bottom: 8px;">Password</label>
-                        <input type="text" name="password" placeholder="••••••••" required style="width: 100%; padding: 14px 16px; border: 1px solid #d1dcda; border-radius: 8px; font-size: 15px; background-color: #f8faf9; color: #1b2621;">
+                        <input type="password" name="password123" placeholder="••••••••" required style="width: 100%; padding: 14px 16px; border: 1px solid #d1dcda; border-radius: 8px; font-size: 15px; background-color: #f8faf9; color: #1b2621;">
                     </div>
 
                     <div class="form-actions" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; font-size: 14px;">
