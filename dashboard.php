@@ -10,7 +10,7 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tru
 // Database Connection
 $host = "localhost";
 $username = "root";
-$password = "1";
+$password = "";
 $dbname = "anyfact_db";
 
 $conn = new mysqli($host, $username, $password, $dbname);
