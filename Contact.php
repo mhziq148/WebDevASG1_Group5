@@ -68,6 +68,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit_order'])) {
             <a href="Product.html">Products</a>
             <a href="OurStory.html">Our Story</a>
             <a href="Contact.php" class="active">Contact</a>
+			<a href="admin_login.php">Login</a>
+		
         </nav>
     </div>
 </header>
