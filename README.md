@@ -7,7 +7,7 @@ A web application developed for **AnyFacture Studio**, specializing in premium f
 ## Features
 
 ### 1. Admin Features
-* **Secure Authentication:** Administrator login and session management (`login.php` / `logout.php`) to protect sensitive control panels.
+* **Secure Authentication:** Administrator login and session management (`admin_login.php` / `admin_logout.php`) to protect sensitive control panels.
 * **Full CRUD Operations:** Administrators can view, create, update, and delete customer and product records through an intuitive dashboard.
 * **Simple Reporting:** Generates real-time summary reports (such as total orders and user requests received) directly from the database.
 
