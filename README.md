@@ -54,8 +54,9 @@ A web application developed for **AnyFacture Studio**, specializing in premium f
 ---
 
 ## Database Setup
-1. Open phpMyAdmin and go to **Import** tab, then upload 'anyfact_db.sql' file include in this repository
-2. Click **Go** to set up the tables automatically.
+1. Open phpMyAdmin **Create** new database name "anyfact_db"
+2. Then go to **Import** tab, then upload 'anyfact_db.sql' file include in this repository
+3. Click **Go** to set up the tables automatically.
 
 ---
 
