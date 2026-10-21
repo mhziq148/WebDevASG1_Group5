@@ -1,12 +1,12 @@
-<!--
+<?php
+/*
 Web Development Assignment
 Group 5
 Members:
 	Muhammad Noorur Rashiq bin Abuzar (B20250386)
 	Muhammad Haziq Syazani bin Hasroni (B20250360)
 	Awangku Ahmad Rasyid bin Pg Saiful Rizal (B20250033)
--->
-<?php
+*/
 // anyfacture.db connection
 $host = 'localhost';
 $username = 'root';
@@ -90,10 +90,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit_order'])) {
                 <p>Place an order for furniture, request a plastic waste pickup, or make a general inquiry.</p>
             </div>
 
-            <!-- Added .form-container class to toggle submission state styles -->
             <div class="contact-grid form-container <?php echo $is_submitted ? 'submitted' : ''; ?>">
             
-                <!-- Form mapped with CSS classes -->
                 <form action="process_order.php" method="POST">
                 
                     <!-- Success Banner -->
