@@ -44,11 +44,12 @@ A web application developed for **AnyFacture Studio**, specializing in premium f
 
 ## Installation & Setup
 1. Download this repository into your local server directory (e.g. htdocs in XAMPP).
-2. Start Apache & MySQL via your local server control panel
-3. Set Up the Database:
+2. Rename the folder **WebDevASG1_Group5** into **anyfacture**
+3. Start Apache & MySQL via your local server control panel
+4. Set Up the Database:
    - Open phpMyAdmin (http://localhost/phpmyadmin).
    - Import and run the SQL queries to set up your orders table
-4. Run the project
+5. Run the project
    - http://localhost/anyfacture/Home.html
 
 ---
