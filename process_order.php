@@ -1,4 +1,12 @@
 <?php
+/*
+Web Development Assignment
+Group 5
+Members:
+	Muhammad Noorur Rashiq bin Abuzar (B20250386)
+	Muhammad Haziq Syazani bin Hasroni (B20250360)
+	Awangku Ahmad Rasyid bin Pg Saiful Rizal (B20250033)
+*/
 $host = "localhost";
 $username = "root";
 $password = ""; // Leave blank if you haven't set a root password in XAMPP/Wamp
@@ -10,7 +18,6 @@ if ($conn->connect_error) {
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Use null coalescing (??) to prevent "Undefined array key" warnings if a field is missing
     $name = $_POST['name'] ?? '';
     $email = $_POST['email'] ?? '';
     $phone = $_POST['phone'] ?? '';
