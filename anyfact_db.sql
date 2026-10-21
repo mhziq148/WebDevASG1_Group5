@@ -43,9 +43,9 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id`, `name`, `email`, `phone`, `product`, `quantity`, `notes`, `created_at`) VALUES
-(1, 'Haziq', 'Haziq@gmail.com', '+673 111 1111', 'EcoStack Lounge Chair', 2, 'vevevveve', '2026-10-16 13:59:36'),
+(1, 'Haziq', 'Haziq@gmail.com', '+673 111 1111', 'EcoStack Lounge Chair', 2, 'red color', '2026-10-16 13:59:36'),
 (2, 'Rayyan', 'Rayyan@gmail.com', '+673 123 4567', 'Garden Bench - 2-Seater', 4, 'blue color with pink handle and red marker', '2026-10-16 14:03:36'),
-(4, 'Izzat', 'Izzat@gmail.com', '+673 234 5678', 'EcoStack Lounge Chair', 5, 'jjanc', '2026-10-16 14:08:24');
+(4, 'Izzat', 'Izzat@gmail.com', '+673 234 5678', 'EcoStack Lounge Chair', 5, 'Surprise me', '2026-10-16 14:08:24');
 
 --
 -- Indexes for dumped tables
