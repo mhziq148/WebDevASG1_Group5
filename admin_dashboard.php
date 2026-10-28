@@ -45,7 +45,6 @@ $total_orders = $total_orders_query->fetch_assoc()['total'];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="script.js"></script>
     <title>Admin Dashboard | AnyFacture Studio</title>
     <!-- Linked external stylesheet -->
     <link rel="stylesheet" href="style.css">
