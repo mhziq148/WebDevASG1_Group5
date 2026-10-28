@@ -62,7 +62,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit_order'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="script.js"></script>
     <title>AnyFacture Studio | Contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
