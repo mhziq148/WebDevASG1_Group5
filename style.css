@@ -349,4 +349,66 @@ p {
     position: absolute;
     top: 1rem;
     left: 1rem;
-    background-color: rgba(255, 255, 255,
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* --- ADMIN DASHBOARD --- */
+.admin-dashboard-body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9f6;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.admin-dashboard-body h2 {
+    color: #2c3e50;
+}
+
+/* Table Container Styling */
+.admin-dashboard-body table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.admin-dashboard-body th {
+    background-color: #235d3a;
+    color: #ffffff;
+    text-align: left;
+    padding: 14px 16px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.admin-dashboard-body td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 14px;
+}
+
+.admin-dashboard-body tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.admin-dashboard-body tr:hover {
+    background-color: #f1f3f5;
+}
+
+.admin-dashboard-body td a {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 4px;
+    background-color: #fde8e8;
+    transition: background-color 0.2s;
+}
+
+.admin-dashboard-body td a:hover {
+    background-color: #fbd5d5;
+    color: #c0392b;
+}
